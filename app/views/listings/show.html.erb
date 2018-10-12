@@ -72,7 +72,7 @@
     <% end %>
 
     <% @proposals.each do |p| %>
-    <div>
+    <div class='approval-message'>
       <%= react_component 'Proposal',
       props: {
                proposal: p,
@@ -82,19 +82,6 @@
        %>
     </div>
     <% end %>
-
-
-  <% @proposals.each do |p| %>
-    <div>
-      <%= react_component 'Proposal',
-      props: {
-               proposal: p,
-               listing: @listing,
-               user: p.user,
-               proposals: @allProposals
-             }
-       %>
-    </div>
 
   <% end %>
 

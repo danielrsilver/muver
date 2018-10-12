@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :guests, only: [:index, :show]
   resources :listings do
-    resources :proposals, only: [:update, :destroy]
+    resources :proposals, only: [:update]
   end
 
   resource :proposals

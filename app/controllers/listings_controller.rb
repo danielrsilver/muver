@@ -14,7 +14,6 @@ class ListingsController < ApplicationController
     @proposal = Proposal.new
     @proposals = Listing.find(params[:id]).proposals
     @listing = Listing.find(params[:id])
-    @allProposals = Listing.find(params[:id]).proposals.map{|proposal| proposal.user }
     respond_to do |format|
       format.html
       format.json do
@@ -36,12 +35,6 @@ class ListingsController < ApplicationController
       redirect_to listings_path,
         alert: "Could not save listing: #{@listing.errors.full_messages.join(', ')}"
     end
-  end
-
-  def destroy
-    @listing = Listing.find(params[:id]).destroy
-    flash.notice = 'Listing was successfully destroyed.'
-    redirect_to listings_path
   end
 
   def update

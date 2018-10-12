@@ -1,14 +1,12 @@
-.approved-status{
+.approval-status{
   background-color: green;
   color: white;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
   text-align: center;
   font-weight: bold;
-  width:20em;
+  width:50vw;
   border-radius: 5px;
+  float: left;
+  padding: .375rem .75rem
 }
 
 .view-profile-btn {
@@ -17,4 +15,8 @@
 
 .user-wants-to-help {
   font-weight: bold;
+}
+
+.approval-toggle {
+  margin-left: 2vw;
 }

@@ -1,16 +1,19 @@
 <%= form_with(model: @proposal, local: true) do |form|%>
   <% if user_signed_in? %>
-    <div class='form-group'>
+    <div class="form-group">
       <%= form.hidden_field :user_id, value: current_user.id %>
       <%= form.hidden_field :listing_id, value: @listing.id %>
       <%= form.hidden_field :approved, value: false %>
     </div>
-    <div class='actions'>
-      <%= form.submit 'Sign Me Up!', class: 'btn btn-primary' unless (@listing.proposals.where(user_id: current_user.id).count >= 1) %>
+    <div class="actions">
+      <% if (@listing.proposals.where(user_id: current_user.id).count >= 1) %>
+      <% else %>
+      <%= form.submit "Sign Me Up!", class: "btn btn-primary" %>
+      <% end %>
     </div>
   <% else %>
-    <div class='actions'>
-      <%= link_to 'Sign Me Up!', new_user_session_path, class: 'btn btn-primary' %>
+    <div class="actions">
+    <%= link_to "Sign Me Up!", new_user_session_path, class: "btn btn-primary" %>
     </div>
   <% end %>
 <% end %>
