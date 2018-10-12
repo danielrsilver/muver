@@ -5,26 +5,26 @@
   width: 100%;
   left: 0;
   right: 0;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-  padding-bottom: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 7.5vw;
   background:
   	linear-gradient(
-  		#c6e5ec,
+  		#c5efff,
   		transparent
   	),
   	linear-gradient(
-  		50deg,
-  		silver,
+  		30deg,
+  		#fff1ff,
   		transparent
   	),
   	linear-gradient(
-  		-50deg,
-  		silver,
+  		-30deg,
+  		#ecc6c6,
   		transparent
   	);
   background-blend-mode: screen;
-  font-family: 'Poppins', sans-serif, bold;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .row-data a {
@@ -41,7 +41,10 @@
 }
 
 .starting-location-map {
-  margin-top: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .listing-status {
@@ -50,4 +53,8 @@
 
 .edit-listing-btn {
   margin-top: 2vw;
+}
+
+.approval-message {
+  display: flex;
 }

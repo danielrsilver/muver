@@ -37,12 +37,6 @@ class ListingsController < ApplicationController
     end
   end
 
-  def destroy
-    @listing = Listing.find(params[:id]).destroy
-    flash.notice = 'Listing was successfully destroyed.'
-    redirect_to listings_path
-  end
-
   def update
     @listing = Listing.find(params[:id]).update(listing_params)
     flash.notice = 'Listing was successfully updated.'

@@ -11,7 +11,6 @@ class Proposal < ApplicationRecord
     notification.proposal = Proposal.last
     notification.user = Proposal.last.listing.user
     notification.save!
-    # Notification.new(message: "Notifications work please!")
   end
 
 end

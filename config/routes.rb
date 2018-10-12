@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   end
 
   resource :proposals
-
   resource :map, only: [:show]
   resource :jobs, only: [:show]
 

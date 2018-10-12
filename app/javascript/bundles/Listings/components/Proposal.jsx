@@ -27,12 +27,12 @@ class Proposal extends React.Component{
         <div className="user-wants-to-help">
           {`${this.props.user.first_name} wants to help!`}
           <ListingsModal
-            user     = {this.props.user}
-            listing  = {this.props.listing.id}
-            proposal = {this.props.proposal}
-            approveProposal = {this.approveProposal}
-            modal = {modal}
-            toggle = {this.toggle}
+            user              = {this.props.user}
+            listing           = {this.props.listing.id}
+            proposal          = {this.props.proposal}
+            approveProposal   = {this.approveProposal}
+            modal             = {modal}
+            toggle            = {this.toggle}
             />
         </div>
       )
@@ -40,16 +40,12 @@ class Proposal extends React.Component{
     else {
       return (
         <div>
-          <div className="approved-status">{`${this.props.user.first_name} has been Approved!`}</div>
-          <div className="btn btn-primary" onClick={ () => this.approveProposal(this.props.listing.id, this.props.proposal)}>Approve/Decline</div>
+          <div className='approval-status'>{`${this.props.user.first_name} has been Approved!`}</div>
+          <div className='btn btn-primary approval-toggle' onClick={ () => this.approveProposal(this.props.listing.id, this.props.proposal)}>Approve/Decline</div>
         </div>
-
-
       )
     }
   }
 }
-
-
 
 export default Proposal;
