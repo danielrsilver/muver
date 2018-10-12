@@ -14,12 +14,6 @@ class Proposal extends React.Component{
      this.setState({ approved: !this.state.approved})
   }
 
-  deleteProposal(listing, proposal) {
-    axios.delete(`/listings/${listing}/proposals/${proposal.id}`)
-    location.reload()
-    this.setState({ approved: this.state.approved })
-  }
-
   toggle = () => {
     this.setState({
       modal: !this.state.modal
@@ -39,7 +33,6 @@ class Proposal extends React.Component{
             approveProposal   = {this.approveProposal}
             modal             = {modal}
             toggle            = {this.toggle}
-            deleteProposal    = {this.deleteProposal}
             />
         </div>
       )

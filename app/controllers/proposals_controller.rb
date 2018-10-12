@@ -19,11 +19,6 @@ class ProposalsController < ApplicationController
 
   end
 
-  def destroy
-    @proposal = Proposal.find(params[:id])
-    @proposal.destroy
-  end
-
   private
 
   def proposal_params

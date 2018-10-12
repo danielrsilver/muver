@@ -4,7 +4,6 @@ import MiniProfile from './MiniProfile'
 import axios from 'axios';
 
 const ListingsModal = props => {
-
   return (
    <div>
      <Button color="primary" onClick={props.toggle} className="view-profile-btn">View Profile</Button>
@@ -23,7 +22,6 @@ const ListingsModal = props => {
    </div>
  );
 }
-
 
 
 export default ListingsModal;
