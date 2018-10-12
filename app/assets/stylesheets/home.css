@@ -1,11 +1,10 @@
 *{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .btn-group .dropdown-menu  {
   background-color: #f8f9fa;
   color: rgba(0,0,0,.5);
-  
 }
 
 .btn-group button  {
@@ -36,8 +35,6 @@
   		transparent
   	);
   background-blend-mode: screen;
-  font-family: 'Gruppo', cursive;
-
 }
 
 .alert {
@@ -50,15 +47,11 @@
   padding-left: 10vw;
   padding-right: 10vw;
   display: inline-block;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .home-buttons {
-
-
-#first-button, #second-button {
-  margin-bottom: 5vw;
+  color: #e1e6f0;
   text-align: center;
   padding-left: 50vw;
   padding-right: 50vw;
@@ -70,4 +63,13 @@
 #first-button, #second-button {
   margin: 6rem 3rem 6rem 3rem;
   padding: 15px;
-} 
+}
+
+.navbar-home-name {
+  margin-left: -1vw;
+}
+
+.navbar-home-icon a {
+  color: inherit;
+  text-decoration: none;
+}

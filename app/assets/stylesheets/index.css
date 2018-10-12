@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   }
 
 
@@ -8,9 +8,9 @@ a.navbar-brand {
   padding-left: 1rem;
 }
 
- nav{
-   font-size: 24px; 
-} 
+nav{
+   font-size: 24px;
+}
 
 body{
   background-color: lightblue;

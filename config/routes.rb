@@ -7,15 +7,12 @@ Rails.application.routes.draw do
   get 'users/:id/pic' => 'users#new', as: :user_avatar
   post 'users/:id/pic' => 'users#create'
 
-
-
   resources :guests, only: [:index, :show]
   resources :listings do
     resources :proposals, only: [:update, :destroy]
   end
 
   resource :proposals
-
   resource :map, only: [:show]
   resource :jobs, only: [:show]
 

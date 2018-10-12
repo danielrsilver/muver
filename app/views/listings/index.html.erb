@@ -1,19 +1,22 @@
-<div class="my-listings"
+<div class='my-listings'>
   <h1>My Listings</h1>
 
   <% @listings.each do |l| %>
     <div class='row'>
       <div class='form-group col-md-8'>
-
-        <div class="listing-link"><%= link_to l.description, listing_path(l.id) %></div>
+        <div class='listing-link'>
+          <%= link_to l.description, listing_path(l.id) %>
+        </div>
       </div>
       <div class='form-group col-md-2'>
-
-        <div><%= link_to 'Update', edit_listing_path(l.id), class: 'btn btn-info float-right' %></div>
+        <div>
+          <%= link_to 'Update', edit_listing_path(l.id), class: 'btn btn-info float-right' %>
+        </div>
       </div>
       <div class='form-group col-md-2'>
-
-        <div><%= link_to 'Delete', l, :method => :delete, :id => l.id, class: 'btn btn-danger float-right', data: { confirm: 'Are you sure?' } %></div>
+        <div>
+          <%= link_to 'Delete', l, :method => :delete, :id => l.id, class: 'btn btn-danger float-right', data: { confirm: 'Are you sure?' } %>
+        </div>
       </div>
     </div>
   <% end %>
