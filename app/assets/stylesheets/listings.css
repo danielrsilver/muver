@@ -10,17 +10,17 @@
   padding-bottom: 7.5vw;
   background:
   	linear-gradient(
-  		#c6e5ec,
+  		#c5efff,
   		transparent
   	),
   	linear-gradient(
-  		50deg,
-  		silver,
+  		30deg,
+  		#fff1ff,
   		transparent
   	),
   	linear-gradient(
-  		-50deg,
-  		silver,
+  		-30deg,
+  		#ecc6c6,
   		transparent
   	);
   background-blend-mode: screen;
