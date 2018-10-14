@@ -19,12 +19,12 @@
 
   <div class="form-group">
     <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+    <%= f.text_field :first_name, autocomplete: 'name', class: 'form-control' %>
   </div>
 
   <div class="form-group">
     <%= f.label :first_name %>
-    <%= f.password_field :first_name, autocomplete: 'name', class: 'form-control' %>
+    <%= f.text_field :first_name, autocomplete: 'name', class: 'form-control' %>
 
     <div class="form-group mt-3">
       <%= f.label :last_name %>
