@@ -1,16 +1,16 @@
 <div class='show-page'>
-  <h1><strong><%= @listing.description %></strong></h1>
+  <h1><strong><%= @listing.city %>, <%= @listing.state %> to <%= @listing.ending_address %></strong></h1>
 
   <table class='table listings-table table-striped'>
     <tbody>
       <tr>
-        <th class='row-name'scope='row'>Moving From:</th>
+        <th class='row-name'scope='row'>Pick Up:</th>
         <td class='row-data'>
           <a href='http://maps.google.com/maps?q=<%= @listing.latitude %>,<%= @listing.longitude %>'><%= @listing.address %></a>
         </td>
       </tr>
       <tr>
-        <th class='row-name 'scope='row'>Moving To:</th>
+        <th class='row-name 'scope='row'>Drop Off:</th>
         <td class='row-data '><%= @listing.ending_address %></td>
       </tr>
       <tr>
@@ -45,9 +45,13 @@
         <td class='row-data '><%= @listing.max_people %></td>
       </tr>
       <tr>
+        <th class='row-name '>Additional Information:</th>
+        <td class='row-data '><%= @listing.description %></td>
+      </tr>
+      <tr>
         <th class='row-name' scope='row'>Contact:</th>
         <td class='row-data'>
-          <%= link_to "Send a message", user_messages_path(@listing.user_id), class:'btn btn-light' %>
+          <%= link_to "Send a message", user_messages_path(@listing.user_id), class:'btn btn-info' %>
         </td>
       </tr>
     </tbody>

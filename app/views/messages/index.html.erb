@@ -1,5 +1,5 @@
 <h1>
-Chat with <%= link_to @user.email, user_profile_path(current_user.id) %>
+Chat with <%= link_to @user.first_name, user_profile_path(@user.id) %>
 </h1>
 <span id="channel" style="display:none;" data-channel="<%= @channel %>"></span>
 <div>

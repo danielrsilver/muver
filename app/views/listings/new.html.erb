@@ -3,13 +3,13 @@
 
 <%= form_with(model: @listing) do |form|%>
 
-  <div class='row'>
+  <div class='row row-move'>
     <div class='form-group col-md-12'>
       <div><%= form.label(:description) %></div>
       <div><%= form.text_field(:description, class: 'form-control') %></div>
     </div>
   </div>
-  <div class='row'>
+  <div class='row row-move'>
     <div class='form-group col-md-6'>
       <div><%= form.label(:street, 'Pick Up Location') %></div>
       <div><%= form.text_field(:street, :placeholder => 'Address', class: 'form-control') %></div>
@@ -23,13 +23,13 @@
       <div><%= form.text_field(:state, :placeholder => 'State', class: 'form-control') %></div>
     </div>
   </div>
-  <div class='row'>
+  <div class='row row-move'>
     <div class='form-group col-md-12'>
       <div><%= form.label(:ending_address, 'Drop Off Location:') %></div>
       <div><%= form.text_field(:ending_address, :placeholder => 'Address', class: 'form-control') %></div>
     </div>
   </div>
-  <div class='row'>
+  <div class='row row-move'>
     <div class='form-group col-md-3'>
       <div><%= form.label(:price) %></div>
       <div><%= form.number_field(:price, in: 1.0..10000.0, step: 1.0, class: 'form-control') %></div>
@@ -47,7 +47,7 @@
       <div><%= form.number_field(:max_people, in: 1.0..100.0, step: 1.0, class: 'form-control') %></div>
     </div>
   </div>
-  <div class='row'>
+  <div class='row row-move'>
     <div class='form-group col-md-4'>
       <div><%= form.label(:date) %></div>
       <div><%= form.date_field(:date, class: 'form-control') %></div>
@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class='actions'>
+  <div class='actions move-submit-button'>
     <%= form.submit :Submit, class: 'btn btn-primary' %>
   </div>
 <% end %>

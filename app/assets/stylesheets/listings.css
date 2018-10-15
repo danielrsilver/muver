@@ -58,3 +58,19 @@
 .approval-message {
   display: flex;
 }
+
+.table.td {
+  vertical-align: baseline;
+}
+
+.btn-primary.btn {
+  margin: 0;
+}
+
+.row-move {
+  padding: 0;
+}
+
+.move-submit-button {
+  padding-left: 15px;
+}
