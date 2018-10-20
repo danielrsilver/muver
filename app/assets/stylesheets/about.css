@@ -1,0 +1,62 @@
+.about-page {
+  text-align: justify;
+  font-weight: bold;
+  padding-top: 2.5vw;
+  font-size: 1.3em;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100vh;
+}
+
+.about-paragraph {
+  text-align: justify;
+  margin-top: 1em;
+}
+
+.about-paragraph2 {
+  text-align: justify;
+  margin-top: 1em;
+}
+
+.about-header-founders {
+  margin-top: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-founders {
+  margin-top: 2.5vw;
+  padding-bottom: 10vw;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+}
+
+.daniel, .roxanne, .pio, .brendan {
+  border-radius: 50%;
+  height: 8em;
+  width: 8em;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.creator-daniel, .creator-roxanne, .creator-pio, .creator-brendan {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.creator {
+  padding-top: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-page {
+    padding-bottom: 5em;
+    height: auto;
+  }
+}

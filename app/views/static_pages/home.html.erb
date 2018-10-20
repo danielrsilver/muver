@@ -1,41 +1,39 @@
 <div class='home-page' style="">
-  <div class="logo-container">
-    <%= image_tag "muverlogo.png", class: 'container'%>
-  </div>
-
-  <script>
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-    if (!isMobile()) {
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-      $('.popover-dismiss').popover({
-        trigger: 'hover'
-      })
-    }
-  </script>
-
-  <div class="home-buttons">
-    <div class="container-home 1">
-        <a href="<%= new_listing_path %>" id="first-button" data-placement="left" tabindex="0" class="btn btn-outline-info btn-lg" role="button" data-toggle="popover" data-trigger="hover" title="Need Help Moving?" data-content="Create a listing and Muver will connect you!">Create A Listing</a>
+  <div class='logo-and-buttons'>
+    <div class="logo-container">
+      <%= image_tag "muverlogo.png", class: 'container'%>
     </div>
-    <div class="container-home 2">
-      <a href="<%= guests_path %>" id="second-button" data-placement="right" tabindex="0" class="btn btn-outline-info btn-lg" role="button" data-toggle="popover" data-trigger="hover" title="Looking to Make Some Extra Cash?" data-content="Find someone who needs help moving near you!">Browse Listings</a>
+
+    <script>
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+      if (!isMobile()) {
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+        $('.popover-dismiss').popover({
+          trigger: 'hover'
+        })
+      }
+    </script>
+
+    <div class="home-buttons">
+      <div class="container-home 1">
+          <a href="<%= new_listing_path %>" id="first-button" data-placement="left" tabindex="0" class="btn btn-outline-info btn-lg" role="button" data-toggle="popover" data-trigger="hover" title="Need Help Moving?" data-content="Create a listing and Muver will connect you!">Create A Listing</a>
+      </div>
+      <div class="container-home 2">
+        <a href="<%= guests_path %>" id="second-button" data-placement="right" tabindex="0" class="btn btn-outline-info btn-lg" role="button" data-toggle="popover" data-trigger="hover" title="Looking to Make Some Extra Cash?" data-content="Find someone who needs help moving near you!">Browse Listings</a>
+      </div>
     </div>
   </div>
 
   <div class="pics_container">
-     <div class='home-pics'>
-       <%= image_tag "pick-four.jpg", class: 'pics'%>
-     </div>
-     <div class='home-pics'>
-       <%= image_tag "pick-two.jpg", class: 'pics'%>
-     </div>
-     <div class='home-pics'>
-       <%= image_tag "pick-three.jpg", class: 'pics'%>
-     </div>
+    <%= link_to guests_path do %>
+      <%= image_tag "pick-four.jpg", class: 'pics'%>
+      <%= image_tag "pick-two.jpg", class: 'pics'%>
+      <%= image_tag "pick-three.jpg", class: 'pics'%>
+    <% end %>
   </div>
 
 </div>

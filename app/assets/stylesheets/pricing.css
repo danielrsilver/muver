@@ -1,0 +1,22 @@
+.pricing-page {
+  height: 100vh;
+}
+
+.pricing-paragraph-1 {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  text-align: justify;
+}
+
+.pricing-paragraph-2 {
+  display: flex;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-page {
+    padding-bottom: 5em;
+    height: auto;
+  }
+}

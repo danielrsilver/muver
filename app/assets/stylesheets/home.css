@@ -77,12 +77,18 @@ html, body {
 }
 
 .home-buttons {
+  padding-top: 5vh;
   color: #e1e6f0;
   text-align: center;
   font-weight: bold;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+.logo-and-buttons {
+  height: 100vh;
+  padding-bottom: 2em;
 }
 
 #first-button, #second-button {
@@ -94,7 +100,8 @@ html, body {
 }
 
 .pics_container{
-  padding-bottom: 100px;
+  padding-top: 2em;
+  paddin-bottom: 2em;
   height: 100%;
   width: 100%;
   display: flex;
@@ -102,16 +109,18 @@ html, body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .pics {
-  width: 25em;
+  width: 22vw;
   padding: 10px;
   border: #d61274 solid 1px;
   border-radius: 4%;
   display: inline-block;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-bottom: 4em;
 }
 
@@ -129,15 +138,16 @@ html, body {
     font-size: 2em;
   }
 
-  .home-pics img {
+  .pics {
     width: 90%;
     max-width: 300px;
     height: auto;
     max-height: 100%;
-    background-size:cover;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
+    float: none;
     flex-direction: column;
   }
 
@@ -150,10 +160,6 @@ html, body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    float: none;
-  }
-
-  .pics {
     float: none;
   }
 
@@ -174,5 +180,9 @@ html, body {
 
   #second-button {
     margin-top: 2em;
+  }
+  
+  .logo-and-buttons {
+    height: 100vh;
   }
 }

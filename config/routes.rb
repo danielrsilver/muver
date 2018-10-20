@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/thanks' => 'static_pages#thanks', as: :thanks
+  get '/pricing' => 'static_pages#pricing', as: :pricing
+  get '/about' => 'static_pages#about', as: :about
+  get '/faq' => 'static_pages#faq', as: :faq
+
   get '/response_page' => 'static_pages#response_page', as: :response_page
 
   get 'users/:id' => 'users#show', as: :user_profile
